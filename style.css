@@ -1,6 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0; 
     padding: 0;
+}
+
+:root {
+    font-size: 16px; 
+    font-family: "Roboto", sans-serif; 
+
+    /* Define custom properties */
+    --text-primary: black; 
+    --text-secondary: white; 
+    --bg-primary: #23232e;
+    --bg-secondary: #141418; 
+    --sidebar-color: #0ea5e9; 
+    --sidebar-width: clamp(210px, 22vw, 325px);
+    --header-bg-1: #f8f8f8;
+    --header-color-1: #c9c9c9; 
+    --header-color-2: #62daff6e;
+    --blue-1: #084c61; 
+    --gh-avatar1: url("https://github.com/lightningwind.png");
+    --gh-avatar2: url("https://github.com/Robert-Shirley.png");
+    --gh-avatar3: url("https://github.com/bradtraversy.png");
+    --gh-avatar4: url("https://github.com/wesbos.png");
+    --gh-avatar5: url("https://github.com/danielanatolie.png");
+    --content-gray: rgb(235, 235, 235); 
 }
 
 img {
