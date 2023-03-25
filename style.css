@@ -28,6 +28,42 @@
     --content-gray: rgb(235, 235, 235); 
 }
 
+body {
+    width: 100vw; 
+    height: 100vh;
+    display: grid; 
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main-content";
+    grid-template-rows: 1fr 4fr; 
+    grid-template-columns: 1fr 4fr;
+}
+
 img {
-    width: 50px; 
+    width: 30px; 
+}
+
+nav {
+    grid-area: sidebar;
+    background-color: var(--sidebar-color);
+    padding: 20px; 
+}
+
+.menu-item {
+    color: var(--text-secondary);
+    display: flex; 
+    align-items: center; 
+    gap: 5%; 
+}
+
+.menu-item > h1 {
+    cursor: pointer; 
+}
+
+header {
+    grid-area: header; 
+}
+
+main {
+    grid-area: main-content; 
 }
