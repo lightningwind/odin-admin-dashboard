@@ -3,6 +3,7 @@
 * {
     margin: 0; 
     padding: 0;
+    box-sizing: border-box; 
 }
 
 :root {
@@ -40,7 +41,7 @@ body {
 }
 
 img {
-    width: 30px; 
+    width: 25px; 
 }
 
 nav {
@@ -51,13 +52,30 @@ nav {
 
 .menu-item {
     color: var(--text-secondary);
+    padding-bottom: 1vw; 
+
     display: flex; 
     align-items: center; 
-    gap: 5%; 
+    /* gap: 10%;  */
 }
 
 .menu-item > h1 {
+    font-size: calc(20px + 0.2vw); 
     cursor: pointer; 
+    padding-left: 20px; 
+}
+
+.menu-item > img {
+    width: calc(20px + 0.5vw); 
+}
+
+.dashboard > h1 {
+    font-size: clamp(12px, calc(25px + 0.9vw), 50px);
+    padding-left: 10px; 
+}
+
+.dashboard > img {
+    width: calc(40px + 0.7vw);
 }
 
 header {
