@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
     margin: 0; 
@@ -32,6 +32,8 @@
 body {
     width: 100vw; 
     height: 100vh;
+
+    /* Build basic grid layout using template areas */
     display: grid; 
     grid-template-areas: 
         "sidebar header"
@@ -91,19 +93,21 @@ nav .menu-item {
     width: calc(40px + 0.7vw);
 }
 
-/* === Header styling === */
+/* === HEADER === */
 
 header {
     grid-area: header; 
     background-color: var(--header-bg-1);
     padding: 1.5rem 3rem; 
     box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+
+    display: grid;
+    row-gap: 2.5rem;
 }
 
 .header-top {
     display: grid; 
     grid-template-columns: 1fr max-content; 
-    margin-bottom: 2.5rem; 
     column-gap: 20px; 
 }
 
@@ -129,7 +133,7 @@ input[type="search"] {
     align-items: center;
 
     font-size: 1.5rem;
-    font-weight: bolder;
+    font-weight: 700;
     margin-right: 4rem;
 }
 
@@ -167,13 +171,13 @@ input[type="search"] {
 }
 
 .profile .greeting {
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 0.4rem;
 }
 
 .profile .name {
     font-size: 2rem; 
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .buttons {
@@ -191,12 +195,12 @@ input[type="search"] {
     border: 1px solid gray; 
 
     font-size: 20px; 
-    font-weight: 800;
+    font-weight: 900;
 
     cursor: pointer; 
 }
 
-/* === Main Content === */
+/* === MAIN CONTENT (projects, announcements, trending) === */
 
 main {
     grid-area: main-content; 
