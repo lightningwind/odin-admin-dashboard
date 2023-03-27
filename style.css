@@ -179,6 +179,26 @@ input[type="search"] {
     font-weight: bolder;
 }
 
+.buttons {
+    display: flex; 
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    color: var(--text-secondary);
+    background-color: var(--sidebar-color);
+
+    padding: 1rem 2.5rem;
+    border-radius: 25px; 
+    border: 1px solid gray; 
+
+    font-size: 20px; 
+    font-weight: 800;
+
+    cursor: pointer; 
+}
+
 main {
     grid-area: main-content; 
 }
