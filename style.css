@@ -218,14 +218,20 @@ main {
     height: 100%;
 }
 
-.projects {
-    grid-area: projects;
+.card {
+    background-color: var(--header-bg-1);
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
 }
 
-.projects > h3 {
+main h3 {
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 0.8rem;
+}
+
+.projects {
+    grid-area: projects;
 }
 
 .projects > .cards {
@@ -234,12 +240,6 @@ main {
     grid-auto-rows: 250px; 
     gap: 2rem;
     margin-bottom: 2rem; 
-}
-
-.card {
-    background-color: var(--header-bg-1);
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
 }
 
 .projects .card {
@@ -255,10 +255,7 @@ main {
     margin-top: 10px;
 }
 
-.projects .card-title, 
-.announcements > h3,
-.trending > h3   
-{
+.projects .card-title {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0.3rem;
