@@ -42,6 +42,7 @@ body {
 
 img {
     width: 25px; 
+    cursor: pointer; 
 }
 
 /* === Sidebar styling === */
@@ -106,11 +107,13 @@ header {
     display: grid; 
     grid-template-columns: 1fr max-content; 
     margin-bottom: 2.5rem; 
-    margin-top: 0.5rem;
+    column-gap: 20px; 
 }
 
 .search {
     width: 100%; 
+    display: grid; 
+    align-items: center;
 }
 
 input[type="search"] {
@@ -122,6 +125,31 @@ input[type="search"] {
     border-radius: 10px; 
     margin-left: 1.25rem; 
     padding: 0.5rem 1.5rem; 
+}
+
+.header-top > .account {
+    display: flex; 
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-right: 4rem;
+}
+
+.github-avatar1 {
+    background: var(--gh-avatar1) center center / cover no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.account > .github-avatar1 {
+    width: 60px; 
+    height: 60px;
+    margin: 0 2rem 0 2rem; 
+}
+
+.menu-icon > img {
+    width: 30px; 
 }
 
 main {
