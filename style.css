@@ -204,4 +204,81 @@ input[type="search"] {
 
 main {
     grid-area: main-content; 
+    background-color: var(--content-gray);
+
+    display: grid; 
+    grid-template-columns: 1fr auto;
+    grid-template-rows: min-content 1fr; 
+    gap: 2rem;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+
+    padding: 2rem; 
+    height: 100%;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.projects > h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.projects > .cards {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px; 
+    gap: 2rem;
+    margin-bottom: 2rem; 
+}
+
+.card {
+    background-color: var(--header-bg-1);
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+}
+
+.projects .card {
+    border-left: 10px solid orange;
+    padding: 20px;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects .card-content {
+    margin-top: 10px;
+}
+
+.projects .card-title, 
+.announcements > h3,
+.trending > h3   
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.projects .card-text {
+    font-weight: 300;
+}
+
+.projects .card-icons {
+    align-self: flex-end; 
+
+    display: flex; 
+    gap: 1.5rem;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending; 
 }
