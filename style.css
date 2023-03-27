@@ -52,6 +52,7 @@ nav {
 
 .menu-item {
     color: var(--text-secondary);
+    padding-left: 15px; 
     padding-bottom: 1vw; 
 
     display: flex; 
@@ -62,11 +63,16 @@ nav {
 .menu-item > h1 {
     font-size: calc(20px + 0.2vw); 
     cursor: pointer; 
-    padding-left: 20px; 
+    padding-left: 25px; 
 }
 
 .menu-item > img {
     width: calc(20px + 0.5vw); 
+}
+
+.dashboard {
+    padding: 0; 
+    margin-bottom: 60px; 
 }
 
 .dashboard > h1 {
@@ -76,6 +82,10 @@ nav {
 
 .dashboard > img {
     width: calc(40px + 0.7vw);
+}
+
+.menu-item:nth-child(8) {
+    margin-top: 60px; 
 }
 
 header {
