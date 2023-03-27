@@ -45,12 +45,16 @@ img {
     cursor: pointer; 
 }
 
-/* === Sidebar styling === */
+/* === SIDEBAR === */
 
 nav {
     grid-area: sidebar;
     background-color: var(--sidebar-color);
-    padding: 20px; 
+    padding: 20px 35px; 
+
+    display: grid; 
+    grid-template-rows: repeat(3, max-content); 
+    row-gap: 60px;
 }
 
 .menu-item {
@@ -58,11 +62,9 @@ nav {
 
     display: flex; 
     align-items: center; 
-    /* gap: 10%;  */
 }
 
 nav .menu-item {
-    padding-left: 15px; 
     padding-bottom: 1vw; 
 }
 
@@ -78,7 +80,6 @@ nav .menu-item {
 
 .dashboard {
     padding: 0; 
-    margin-bottom: 60px; 
 }
 
 .dashboard > h1 {
@@ -88,10 +89,6 @@ nav .menu-item {
 
 .dashboard > img {
     width: calc(40px + 0.7vw);
-}
-
-.menu-item:nth-child(8) {
-    margin-top: 60px; 
 }
 
 /* === Header styling === */
@@ -198,6 +195,8 @@ input[type="search"] {
 
     cursor: pointer; 
 }
+
+/* === Main Content === */
 
 main {
     grid-area: main-content; 
