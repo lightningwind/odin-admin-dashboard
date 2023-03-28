@@ -47,6 +47,10 @@ img {
     cursor: pointer; 
 }
 
+ul {
+    list-style-type: none; 
+}
+
 /* === SIDEBAR === */
 
 nav {
@@ -103,6 +107,9 @@ header {
 
     display: grid;
     row-gap: 2.5rem;
+
+    position: sticky; 
+    top: 0;
 }
 
 .header-top {
@@ -244,7 +251,7 @@ main h3 {
 
 .projects .card {
     border-left: 10px solid orange;
-    padding: 20px;
+    padding: 1.5rem 1rem;
 
     display: flex; 
     flex-direction: column;
@@ -274,6 +281,26 @@ main h3 {
 
 .announcements {
     grid-area: announcements;
+    width: 35ch;
+}
+
+.announcements > .card {
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.announcements .card-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem; 
+}
+
+.announcements .card-text {
+    font-weight: 300;
+    font-size: 0.8rem;
 }
 
 .trending {
