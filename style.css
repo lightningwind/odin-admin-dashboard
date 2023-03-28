@@ -51,6 +51,48 @@ ul {
     list-style-type: none; 
 }
 
+.github-avatar1 {
+    background: var(--gh-avatar1) center center / cover no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.github-avatar2 {
+    background: var(--gh-avatar2) center center / cover no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+}
+
+.github-avatar3 {
+    background: var(--gh-avatar3) center center / cover no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+}
+
+.github-avatar4 {
+    background: var(--gh-avatar4) center center / cover no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+}
+
+.github-avatar5 {
+    background: var(--gh-avatar5) center center / cover no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+}
+
 /* === SIDEBAR === */
 
 nav {
@@ -142,12 +184,6 @@ input[type="search"] {
     font-size: 1.5rem;
     font-weight: 700;
     margin-right: 4rem;
-}
-
-.github-avatar1 {
-    background: var(--gh-avatar1) center center / cover no-repeat;
-    border-radius: 50%;
-    cursor: pointer;
 }
 
 .account > .github-avatar1 {
@@ -305,4 +341,24 @@ main h3 {
 
 .trending {
     grid-area: trending; 
+    width: 35ch;
+}
+
+.trending > .card {
+    padding: 1.5rem;
+
+    display: flex; 
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.trending .trend {
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
+.trending .card-text {
+    font-weight: 300;
+    font-size: 0.8rem;
 }
