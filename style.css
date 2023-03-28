@@ -186,7 +186,7 @@ input[type="search"] {
     margin-right: 4rem;
 }
 
-.account > .github-avatar1 {
+.account .github-avatar1 {
     width: 60px; 
     height: 60px;
     margin: 0 2rem 0 2rem; 
@@ -208,7 +208,7 @@ input[type="search"] {
     gap: 1rem; 
 }
 
-.profile > .github-avatar1 {
+.profile .github-avatar1 {
     width: 100px; 
     height: 100px; 
 }
